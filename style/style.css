@@ -118,4 +118,9 @@ h1{
         flex-wrap: wrap;
         width: 18em
     }
+    .first_form input{
+        height: 2.5em;
+        width: 95vw;
+
+    }
 }
