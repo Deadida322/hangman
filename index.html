@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Hangman</title>
+</head>
+<body>
+    <div class="main_warp">
+        <form action="" class="first_form">
+            <label for="first_name">Ваше имя</label>
+            <input type="text" name="first_name" id="first_name"/>
+            <button class="name_submit">Отправить</button>
+        </form>
+
+        <h1></h1>
+        <div class="game_warp">
+            <div class="game_image">
+                <img id='game_img' src="style/img/1.png">
+            </div>
+            <div class="game_section">
+                <div class="alphabet">
+                    <div class="alphabet_item">а</div>
+                    <div class="alphabet_item">б</div>
+                    <div class="alphabet_item">в</div>
+                    <div class="alphabet_item">г</div>
+                    <div class="alphabet_item">д</div>
+                    <div class="alphabet_item">е</div>
+                    <div class="alphabet_item">ё</div>
+                    <div class="alphabet_item">ж</div>
+                    <div class="alphabet_item">з</div>
+                    <div class="alphabet_item">и</div>
+                    <div class="alphabet_item">й</div>
+                    <div class="alphabet_item">к</div>
+                    <div class="alphabet_item">л</div>
+                    <div class="alphabet_item">м</div>
+                    <div class="alphabet_item">н</div>
+                    <div class="alphabet_item">о</div>
+                    <div class="alphabet_item">п</div>
+                    <div class="alphabet_item">р</div>
+                    <div class="alphabet_item">с</div>
+                    <div class="alphabet_item">т</div>
+                    <div class="alphabet_item">у</div>
+                    <div class="alphabet_item">ф</div>
+                    <div class="alphabet_item">х</div>
+                    <div class="alphabet_item">ц</div>
+                    <div class="alphabet_item">ч</div>
+                    <div class="alphabet_item">ш</div>
+                    <div class="alphabet_item">щ</div>
+                    <div class="alphabet_item">ъ</div>
+                    <div class="alphabet_item">ы</div>
+                    <div class="alphabet_item">ь</div>
+                    <div class="alphabet_item">э</div>
+                    <div class="alphabet_item">ю</div>
+                    <div class="alphabet_item">я</div>
+                </div>
+            </div>
+        </div>
+        <div class="game_section_word"></div>
+    </div>
+</body>
+</html>

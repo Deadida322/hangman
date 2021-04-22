@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color:#121e22;
+    color: #e8f8ff;
+}
+.first_form{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first_form *{
+    margin: .5em;
+}
+.first_form input{
+    height: 2em;
+    width: 200%;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+button{
+    font-size: 1.1em;
+    padding: .2em;
+    cursor: pointer;
+    border-radius: 6px;
+    color:#e8f8ffb6;
+    border: 1px solid #e8f8ffbb;
+    background-color: #082531;
+    outline: none;
+}
+button:hover{
+    font-size: 1.1em;
+    padding: .2em;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color:#e8f8ffb6;
+    border: 1px solid #082531;
+    color: #082531;
+    outline: none;
+}
+.main_warp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    margin-top: 1em;
+}
+.alphabet{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20em
+}
+.alphabet_item{
+    font-size: 1.5em;
+    padding: .2em;
+    min-width: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+.alphabet_item:hover{
+    background-color:#18282e;
+}
+#game_img{
+    width: 20em
+}
+.game_warp{
+    display: none;
+    margin-top: 2em;
+    display: none;
+}
+.game_warp .game_image,.game_section{
+    margin: 2em;
+}
+.none{
+    display: none;
+}
+.block{
+    display: flex;
+    justify-content: space-around;
+}
+.game_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game_section_word{
+    display: flex;
+}
+.word_item{
+    margin: .2em;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width:800px){
+    html{
+        font-size: 14px;
+    }
+    .block{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column
+    }
+    .alphabet{
+        display: flex;
+        flex-wrap: wrap;
+        width: 18em
+    }
+}
