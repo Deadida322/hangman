@@ -127,4 +127,10 @@ h1{
         width: 95vw;
 
     }
+    .game_warp{
+        margin-top: 1em;
+    }
+    .game_section{
+        margin: .5em
+    }
 }
