@@ -18,7 +18,6 @@ let words = [
     'Послание',
     'Колонка',
     'Перчатка',
-
 ];
 
 let letters_remain = 0;
@@ -57,6 +56,7 @@ $(function(){
     $('.alphabet_item').on('click', (e)=>{
         if(error_count < 6 && letters_remain > 0){
             same_letter = e.target.innerHTML
+            e.target.className+=' opacity';
             let pos = cur_word.indexOf(same_letter)
             if(pos!=-1){
                 let elems = document.getElementsByClassName('word_item')
@@ -78,6 +78,12 @@ $(function(){
             }
         }
         if(error_count == 6){
+            $('.game_section_word').empty();
+            for(let i of cur_word){
+                $('.game_section_word').append(
+                    `<div class='word_item' NumVal=${i}>${i}<div>`
+                )
+            }
             $('h1').html(`Вы проиграли, ${gamer}`);
         }else if(letters_remain == 0){
             $('h1').html(`Вы победили, ${gamer}!`);
